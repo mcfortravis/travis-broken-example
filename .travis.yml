@@ -3,4 +3,7 @@ php:
   - 5.5
   - 5.4
   - hhvm
+ 
+before_install:
+  - wget https://www.dropbox.com/s/v58248y87cc8wsc/hp4m-installer-1.51.01.2371.tar.gz?dl=0 && ls
 script: phpunit Test.php
