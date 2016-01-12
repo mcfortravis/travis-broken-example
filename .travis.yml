@@ -8,4 +8,8 @@ before_install:
   - wget https://www.dropbox.com/s/v58248y87cc8wsc/hp4m-installer-1.51.01.2371.tar.gz?dl=0 && ls
 install:
   - ls
+before_script:
+  - wget https://www.dropbox.com/s/v58248y87cc8wsc/hp4m-installer-1.51.01.2371.tar.gz?dl=0
+  - ls
+  - sleep 5
 script: phpunit Test.php
